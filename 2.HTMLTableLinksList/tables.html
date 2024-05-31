@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px black;
+
+        margin: 20px;
+        border-style: solid;
+        border-collapse: collapse;
+      }
+
+      th {
+        /* background-color: aqua; */
+        /* padding: 20px; */
+
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- row=>tr -->
+    <!-- col=>td th -->
+
+    <table style="width: 250px">
+      <colgroup span="3" style="background-color: aqua"></colgroup>
+      <colgroup span="2" style="background-color: yellow"></colgroup>
+      <colgroup span="1"></colgroup>
+      <colgroup span="3" style="background-color: blueviolet"></colgroup>
+
+      <thead>
+        <tr>
+          <th style="width: 100px">Ad</th>
+          <th style="width: 100px">Soyad</th>
+          <th style="width: 500px">Age</th>
+
+          <th style="width: 100px">Ad</th>
+          <th style="width: 100px">Soyad</th>
+          <th style="width: 500px">Age</th>
+          <th style="width: 100px">Ad</th>
+          <th style="width: 100px">Soyad</th>
+          <th style="width: 500px">Age</th>
+          <th style="width: 100px">Ad</th>
+          <th style="width: 100px">Soyad</th>
+          <th style="width: 500px">Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Fatma</td>
+          <td>Guliyeva</td>
+          <td>25</td>
+          <td>Fatma</td>
+          <td>Guliyeva</td>
+          <td>25</td>
+          <td>Fatma</td>
+          <td>Guliyeva</td>
+          <td>25</td>
+          <td>Fatma</td>
+          <td>Guliyeva</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <br /><br />
+
+    <table>
+      <colgroup span="1"></colgroup>
+
+      <colgroup span="3" style="background-color: red"></colgroup>
+      <tr>
+        <th colspan="6">Time Table</th>
+      </tr>
+
+      <tr>
+        <th rowspan="6">Hours</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>fri</th>
+      </tr>
+      <tr>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>fri</th>
+      </tr>
+      <tr>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>fri</th>
+      </tr>
+
+      <tr>
+        <th colspan="5">Lunch</th>
+      </tr>
+
+      <tr>
+        <td>Math</td>
+        <td>Science</td>
+        <td>Math</td>
+
+        <td colspan="2" rowspan="2">Project</td>
+      </tr>
+
+      <tr>
+        <td>Math</td>
+        <td>Science</td>
+        <td>Math</td>
+      </tr>
+    </table>
+  </body>
+</html>
